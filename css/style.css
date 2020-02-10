@@ -667,7 +667,17 @@ html {
     max-width: 370px;
 }
 
-.team-info-link {
+.team-list li:nth-last-child(n+2){
+    margin-right: 10px;
+}
+
+.team-link{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+
+.team-image {
     display: block;
     position: relative;
     width: 100%;
@@ -675,7 +685,7 @@ html {
     text-decoration: none;
 }
 
-.team-info-link img {
+.team-image img {
     position: absolute;
     top: 0;
     left: 0;
@@ -687,7 +697,7 @@ html {
     object-fit: cover;
 }
 
-.team-info-link-hover {
+.team-image-hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -712,11 +722,11 @@ html {
     transition: .3s;
 }
 
-.team-info-link:hover .team-info-link-hover {
+.team-link:hover .team-image-hover{
     opacity: 1;
 }
 
-.team-info-link:hover .hover-icon {
+.team-link:hover .hover-icon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -726,7 +736,7 @@ html {
     width: 100%;
 }
 
-.team-info-link:hover .team-info-description {
+.team-link:hover .team-author {
     border-color: black;
 }
 
@@ -760,10 +770,11 @@ html {
     fill: #7b6c63;
 }
 
-.team-info-description {
+.team-author {
     margin-top: 17px;
     padding: 24px 0;
     border: 3px solid #949494;
+    transition: .3s;
 }
 
 .team-title {
@@ -1527,6 +1538,10 @@ html {
 
     .team-list li:last-child {
         margin: 0 auto 20px;
+    }
+
+    .team-list li:nth-last-child(n+2){
+        margin: 0 auto 20px auto;
     }
 
     .team-title {
