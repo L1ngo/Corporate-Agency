@@ -149,7 +149,7 @@ html {
 
 .header-burger_open:hover {
     width: 25px;
-    height: 18px;
+    height: 17px;
 }
 
 .header-burger-menu,
@@ -778,6 +778,7 @@ html {
 }
 
 .team-title {
+    padding: 5px;
     text-transform: uppercase;
     color: black;
     font-family: 'Raleway', sans-serif;
@@ -1533,7 +1534,7 @@ html {
     .team-list li {
         width: 100%;
         margin: 0 auto 20px;
-        max-width: 370px;
+        max-width: 500px;
     }
 
     .team-list li:last-child {
@@ -1610,13 +1611,14 @@ html {
     }
 
     .blog-image-wrapper:first-child {
+        margin: 0 0 0 auto;
         width: 100%;
         padding: 0 20px 20px 0;
-        margin-right: 10px;
     }
 
     .blog-text-wrapper:last-child {
         position: relative;
+        margin: 0 0 0 auto;
         padding: 0 10px 20px 0;
         width: 100%;
         border-right: 1px solid #ebebeb;
@@ -1640,11 +1642,12 @@ html {
     .blog-image-wrapper:last-child {
         width: 100%;
         padding: 0 20px 20px 0;
-        margin-right: 10px;
+        margin: 0 0 0 auto;
         border-right: 1px solid #ebebeb;
     }
 
     .blog-text-wrapper:first-child {
+        margin: 0 0 0 auto;
         padding: 0 10px 20px 0;
         width: 100%;
     }
@@ -1669,6 +1672,10 @@ html {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+    }
+
+    .contact-form .input-wrapper_w50 {
+        width: 100%;
     }
 
     .footer-wrapper {
